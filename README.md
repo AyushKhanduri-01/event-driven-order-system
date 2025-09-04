@@ -161,7 +161,7 @@ The main method in `Main.java` orchestrates the entire event processing pipeline
   - Uses `HashMap` for fast lookups
 
 
-## 🛠️ Setup and Usage
+##  Setup and Usage
 
 ### Prerequisites:
 - Java 8 or higher
@@ -172,34 +172,13 @@ The main method in `Main.java` orchestrates the entire event processing pipeline
 **Windows (Command Prompt):**
 ```cmd
 mvn clean compile
-```
-
-### Running the Application:
-
-**Linux/macOS:**
-```bash
 mvn exec:java -Dexec.mainClass="org.example.Main"
 ```
-
-**Windows (Command Prompt):**
-```cmd
-mvn exec:java -Dexec.mainClass="org.example.Main"
-```
-
-
-
-**Direct Java execution (after compilation):**
-
 **Linux/macOS:**
 ```bash
-java -cp target/classes org.example.Main
+mvn clean compile
+mvn exec:java -Dexec.mainClass="org.example.Main"
 ```
-
-**Windows (Command Prompt):**
-```cmd
-java -cp target\classes org.example.Main
-```
-
 
 ##  Extending the System
 
